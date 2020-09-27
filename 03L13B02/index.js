@@ -34,10 +34,12 @@ if (name === "bram" || name === "sarah") {
   console.log("Je krijgt geen gratis biertje");
 }
 
-if (totalAmount >= 25 && totalAmount <= 49) {
-  console.log("Je krijgt gratis bitterballen");
-} else if (totalAmount >= 50 && totalAmount <= 99) {
-  console.log("Je krijgt gratis (vega) bitterballen");
-} else if (totalAmount >= 100) {
-  console.log("Je krijgt een gratis fles champagne");
+if (totalAmount >= 100) {
+  console.log("gratis flesje champagne.");
+} else if (totalAmount > 50) {
+  console.log("gratis portie nachos");
+} else if (totalAmount > 25) {
+  console.log("gratis (vega)bitterballen");
+} else {
+  console.log("Helaas geen korting, maar leuk dat je er bent");
 }
